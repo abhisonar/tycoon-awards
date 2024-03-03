@@ -1,0 +1,16 @@
+$black-opacity: rgba(
+  $color: #000000,
+  $alpha: 0.2,
+);
+
+:root {
+  // colors
+  // --primary-color: #6864ed;
+  --primary-color: #d1b561;
+  --primary-color-dark: #a67e36;
+  --shadow-color: #e8eae2;
+  --black-opacity: $black-opacity;
+  --facebook-blue: #4064ac;
+  --linkedin-blue: #0077b5;
+  --instagram-pink: #e33f5f;
+}
