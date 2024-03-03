@@ -21,7 +21,7 @@ const LayoutComponent: React.FC<ILayout> = ({ children }) => {
       {/* {layoutLoading ? (
         <UiLoader />
       ) : ( */}
-      <div className="app-layout bg-redishWhite min-h-screen relative">
+      <div className="app-layout min-h-screen relative">
         <NavbarComponent />
         <PageLayout>{children}</PageLayout>
         <FooterComponent />

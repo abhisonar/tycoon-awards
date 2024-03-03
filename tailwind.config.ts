@@ -36,7 +36,7 @@ const config: Config = {
       colors: {
         primary: {
           default: "var(--primary-color)",
-          lighter: "var(--primary-color-lighter)",
+          darker: "var(--primary-color-darker)",
         },
       },
       boxShadow: {

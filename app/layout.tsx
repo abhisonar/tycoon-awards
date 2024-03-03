@@ -5,6 +5,8 @@ import Script from "next/script";
 import AOSInit from "@shared/base/AOSInit";
 import ThemeRegistry from "@ui/shared-resources/themes/ThemeRegistry";
 import LayoutComponent from "@layout/layout.component";
+import { Suspense } from "react";
+import AppLoading from "./loading";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -33,7 +35,9 @@ export default function RootLayout({
       <AOSInit />
       <body className={inter.className}>
         <ThemeRegistry options={{ key: "mui-theme" }}>
-          <LayoutComponent>{children}</LayoutComponent>
+          <Suspense fallback={<AppLoading />}>
+            <LayoutComponent>{children}</LayoutComponent>
+          </Suspense>
         </ThemeRegistry>
       </body>
     </html>
