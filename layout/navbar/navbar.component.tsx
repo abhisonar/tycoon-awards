@@ -6,11 +6,13 @@ import { MAIN_MENUS } from "@shared/constants/menu-list";
 import "./navbar.component.scss";
 import Image from "next/image";
 import Link from "next/link";
+import { usePathname } from "next/navigation";
 
 const NavbarComponent = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const currentPathName = usePathname();
   return (
-    <div className="navbar h-[80px] flex items-center justify-between px-4">
+    <div className="navbar bg-black h-[80px] flex items-center justify-between w-full">
       <div className="flex justify-center items-center w-[100px]">
         <Image
           src={`/assets/logo.png`}
@@ -34,7 +36,11 @@ const NavbarComponent = () => {
       </span>
       <div className={`menu-list ${isMenuOpen ? "menu-open" : ""}`}>
         {MAIN_MENUS.map((menu) => (
-          <Link href={menu.link} onClick={() => setIsMenuOpen(false)} key={menu.label}>
+          <Link
+            href={menu.link}
+            className={currentPathName === menu.link ? "link-active" : ""}
+            onClick={() => setIsMenuOpen(false)}
+            key={menu.label}>
             {menu.label}
           </Link>
         ))}

@@ -9,7 +9,7 @@ interface IButtonProps {
   variant: ButtonVariant;
   size?: ButtonSize;
   color?: ButtonColor;
-  clicked: () => void;
+  clicked?: () => void;
   className?: string;
 }
 
@@ -26,8 +26,8 @@ const UiButton: React.FC<IButtonProps> = ({
       variant={variant}
       size={size}
       color={color}
-      className={`!${className}`}
-      onClick={() => clicked()}>
+      className={`${className} !rounded-none`}
+      onClick={() => clicked && clicked()}>
       {children}
     </Button>
   );
