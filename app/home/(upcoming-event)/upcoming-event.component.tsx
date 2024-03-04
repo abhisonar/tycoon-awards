@@ -13,7 +13,7 @@ const UpcomingEventComponent = () => {
     setUpcomingEvent(getNextUpcomingEvent());
   };
   return (
-    <div className="w-full">
+    <div className="w-full bg-white">
       <img src={`/assets/hero/layered-waves.svg`} className="w-full h-[60px] lg:h-[100px]" alt="" />
       <div className="flex flex-col gap-4 lg:flex-row justify-between p-4">
         <div className="flex flex-col justify-evenly" data-aos="zoom-in" data-aos-duration="2000">

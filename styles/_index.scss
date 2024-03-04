@@ -12,7 +12,7 @@
 }
 
 body {
-  background-color: var(--bg-white);
+  background: var(--bg-white) !important;
 }
 
 ::-webkit-scrollbar {
