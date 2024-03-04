@@ -13,24 +13,24 @@ const NavbarComponent = () => {
   const currentPathName = usePathname();
   return (
     <div className="navbar bg-black h-[80px] flex items-center justify-between w-full">
-      <div className="flex justify-center items-center w-[100px]">
+      <div className="flex justify-center items-center w-[200px] ml-4">
         <Image
-          src={`/assets/logo.png`}
+          src={`/assets/logo-horizontal.png`}
           alt="tycoon-awards-logo"
           className="w-full h-full object-cover"
           width={100}
           height={130}
         />
       </div>
-      <span className="relative flex h-9 w-9 mr-3 lg:hidden">
-        <span className="animate-ping absolute h-full w-full rounded-full bg-black opacity-20"></span>
+      <span className="relative flex h-9 w-9 mr-5 lg:hidden">
+        <span className="animate-ping absolute h-full w-full rounded-full bg-primary-default opacity-20"></span>
         <span
-          className="relative flex justify-center items-center rounded-full h-9 w-9 p-4 bg-black"
+          className="relative flex justify-center items-center rounded-full h-9 w-9 p-4 bg-primary-default"
           onClick={() => setIsMenuOpen(!isMenuOpen)}>
           {isMenuOpen ? (
-            <CloseRoundedIcon color="primary" fontSize="medium" />
+            <CloseRoundedIcon className="text-white" fontSize="medium" />
           ) : (
-            <MenuRoundedIcon color="primary" fontSize="medium" />
+            <MenuRoundedIcon className="text-white" fontSize="medium" />
           )}
         </span>
       </span>
