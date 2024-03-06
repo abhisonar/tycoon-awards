@@ -25,8 +25,12 @@ const SelectionProcessComponent = () => {
         {SELECTION_PROCESS_DATA.map((item, index) => (
           <div
             key={item.title}
-            className="flex flex-col p-3 bg-blackShade1 w-full rounded-md md:basis-[45%]  lg:basis-[30%] shadow-md">
-            <img src={item.src} alt="" className="h-[100px] object-contain" />
+            className="group flex flex-col p-3 bg-white w-full md:basis-[45%]  lg:basis-[30%] shadow-md overflow-hidden">
+            <img
+              src={item.src}
+              alt=""
+              className="h-[170px] lg:h-[200px] object-contain group-hover:scale-110 transition-all duration-300"
+            />
             <h3 className="text-lg font-bold text-center text-primary-default">{item.title}</h3>
           </div>
         ))}

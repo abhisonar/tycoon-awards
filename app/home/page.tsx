@@ -7,7 +7,6 @@ import UnlockSucessReasonComponent from "./(unlock-success-reason-section)/unloc
 import MediaCoverageComponent from "./(media-coverage)/media-coverage.component";
 import ExcellenceAwardsComponent from "./(excellence-awards)/excellence=awards.component";
 import UnlockOpportunitiesComponent from "./(unlock-opportunities)/unlock-opportunities.component";
-import OpportunitiesComponent from "./opportunities-section/opportunities.component";
 
 const HomePage = () => {
   return (
@@ -19,8 +18,6 @@ const HomePage = () => {
       <ExcellenceAwardsComponent />
       <UnlockSucessReasonComponent />
       <MediaCoverageComponent />
-      <OpportunitiesComponent />
-      <UnlockSucessReasonComponent />
     </div>
   );
 };

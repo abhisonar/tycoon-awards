@@ -6,14 +6,14 @@ export interface ISelectionProcess {
 export const SELECTION_PROCESS_DATA: Array<ISelectionProcess> = [
   {
     title: "Application",
-    src: "https://static.vecteezy.com/system/resources/previews/009/315/276/non_2x/3d-minimal-social-media-with-video-and-photo-gallery-on-mobile-application-and-mobile-web-design-user-interface-optimization-for-banner-and-website-image-3d-render-free-png.png",
+    src: "https://res.cloudinary.com/marathiudyojak/image/upload/v1709749059/tycoon-awards/selection-process/9_jlknjz.webp",
   },
   {
     title: "Shortlisting",
-    src: "https://static.vecteezy.com/system/resources/previews/009/315/276/non_2x/3d-minimal-social-media-with-video-and-photo-gallery-on-mobile-application-and-mobile-web-design-user-interface-optimization-for-banner-and-website-image-3d-render-free-png.png",
+    src: "https://res.cloudinary.com/marathiudyojak/image/upload/v1709749058/tycoon-awards/selection-process/8_rdzmgk.webp",
   },
   {
     title: "Final Call",
-    src: "https://static.vecteezy.com/system/resources/previews/009/315/276/non_2x/3d-minimal-social-media-with-video-and-photo-gallery-on-mobile-application-and-mobile-web-design-user-interface-optimization-for-banner-and-website-image-3d-render-free-png.png",
+    src: "https://res.cloudinary.com/marathiudyojak/image/upload/v1709749059/tycoon-awards/selection-process/10_oj7umn.webp",
   },
 ];

@@ -4,27 +4,27 @@ export interface ExcellenceAwards {
 }
 export const EXCELLENCE_AWARDS_DATA: Array<ExcellenceAwards> = [
   {
-    title: "dshvfhhdsfhdsfvhsdfjh",
+    title: "Mission and Vision",
     src: "https://businessaward.in/assets/img/da/Mission.png",
   },
   {
-    title: "dshvfhhdsfhdsfvhsdfjh",
+    title: "Financial Growth",
     src: "https://businessaward.in/assets/img/da/Mission.png",
   },
   {
-    title: "dshvfhhdsfhdsfvhsdfjh",
+    title: "Innovation / RRD",
     src: "https://businessaward.in/assets/img/da/Mission.png",
   },
   {
-    title: "dshvfhhdsfhdsfvhsdfjh",
+    title: "Human Resource Policies",
     src: "https://businessaward.in/assets/img/da/Mission.png",
   },
   {
-    title: "dshvfhhdsfhdsfvhsdfjh",
+    title: "Goodwill & Brand Perception",
     src: "https://businessaward.in/assets/img/da/Mission.png",
   },
   {
-    title: "dshvfhhdsfhdsfvhsdfjh",
+    title: "Social & Environmental Policies",
     src: "https://businessaward.in/assets/img/da/Mission.png",
   },
 ];

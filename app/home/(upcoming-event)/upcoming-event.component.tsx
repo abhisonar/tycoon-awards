@@ -16,7 +16,7 @@ const UpcomingEventComponent = () => {
     <div className="w-full bg-white">
       <img src={`/assets/hero/layered-waves.svg`} className="w-full h-[60px] lg:h-[100px]" alt="" />
       <div className="flex flex-col gap-4 lg:flex-row justify-between p-4">
-        <div className="flex flex-col justify-evenly" data-aos="zoom-in" data-aos-duration="2000">
+        <div className="flex flex-col justify-evenly">
           <div className="flex flex-col gap-3">
             <h2 className="text-center lg:text-left font-bold text-sm    ">-- Upcoming Event --</h2>
             <h1 className="font-bold text-center text-xl md:text-2xl lg:text-3xl  lg:text-left">
