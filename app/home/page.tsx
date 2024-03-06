@@ -4,6 +4,9 @@ import React from "react";
 import SelectionProcessComponent from "./(selection-process)/selection-process.component";
 import Divider from "@mui/material/Divider";
 import UnlockSucessReasonComponent from "./(unlock-success-reason-section)/unlock-success-reason.component";
+import MediaCoverageComponent from "./(media-coverage)/media-coverage.component";
+import ExcellenceAwardsComponent from "./(excellence-awards)/excellence=awards.component";
+import UnlockOpportunitiesComponent from "./(unlock-opportunities)/unlock-opportunities.component";
 
 const HomePage = () => {
   return (
@@ -11,7 +14,10 @@ const HomePage = () => {
       <HeroSectionComponent />
       <UpcomingEventComponent />
       <SelectionProcessComponent />
-      <UnlockSucessReasonComponent/>
+      <UnlockOpportunitiesComponent />
+      <ExcellenceAwardsComponent />
+      <UnlockSucessReasonComponent />
+      <MediaCoverageComponent />
     </div>
   );
 };
