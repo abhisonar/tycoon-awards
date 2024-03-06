@@ -1,4 +1,5 @@
 import { UNLOCK_OPPORTUNITIES_DATA } from "@shared/data/unlock-opportunities.data";
+import Link from "next/link";
 import React from "react";
 
 const UnlockOpportunitiesComponent = () => {
@@ -8,17 +9,24 @@ const UnlockOpportunitiesComponent = () => {
       <h1 className="text-center text-lg font-bold md:text-xl lg:text-2xl">
         Unlocking Opportunities for Your Business
       </h1>
-      <div className="flex flex-col md:flex-row items-center justify-center flex-wrap w-full p-3 gap-3">
+      <div className="flex flex-col md:flex-row items-center justify-center flex-wrap w-full p-5 gap-3 ">
         {UNLOCK_OPPORTUNITIES_DATA.map((item, index) => (
           <div
             key={item.title}
-            className="flex flex-col p-3 bg-white w-full md:basis-[45%]  lg:basis-[30%] shadow-md overflow-hidden"
+            className={`flex flex-col p-3 bg-white w-full  shadow-md overflow-hidden ${
+              item.isFull ? "md:basis-[100%] " : "md:basis-[47%] "
+            }`}
           >
-            <div className="h-[170px] lg:h-[200px] object-contain group-hover:scale-110 transition-all duration-300" />
             <h3 className="text-lg font-bold text-center text-primary-default">
               {item.title}
             </h3>
-            <p className="text-sm text-center">{item.description}</p>
+            {item?.link ? (
+              <Link href={item.link} className="text-sm text-center">
+                {item.description}
+              </Link>
+            ) : (
+              <p className="text-sm text-center">{item.description}</p>
+            )}
           </div>
         ))}
       </div>
