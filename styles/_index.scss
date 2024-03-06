@@ -30,3 +30,7 @@ body {
 ::-webkit-scrollbar-thumb:hover {
   background: #a3a3a3;
 }
+
+.elementor-shape-fill {
+  @apply bg-black;
+}

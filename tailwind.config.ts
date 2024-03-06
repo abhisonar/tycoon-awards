@@ -38,6 +38,7 @@ const config: Config = {
           default: "var(--primary-color)",
           darker: "var(--primary-color-darker)",
         },
+        blackShade1: "#0D0907",
       },
       boxShadow: {
         "t-sm": "0 -1px 2px 0 rgba(0, 0, 0, 0.05)",
