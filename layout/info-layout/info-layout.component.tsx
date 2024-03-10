@@ -19,7 +19,7 @@ const InfoLayoutComponent: React.FC<IInfoLayout> = ({
   return (
     <div className="info-layout grid grid-cols-1">
       <div className="h-[300px] info-layout-header flex justify-center items-center md:justify-between">
-        <div className="info-layout-banner w-full h-full hidden md:block overflow-hidden">
+        <div className="info-layout-banner w-full h-full block overflow-hidden">
           <img
             src={posterSrc || `/assets/services/service-header.svg`}
             alt=""

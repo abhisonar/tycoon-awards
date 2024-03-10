@@ -18,20 +18,20 @@ const baseSwiperConfig: SwiperOptions = {
   freeMode: true,
   grabCursor: true,
   speed: 5000,
-  slidesPerView: 2,
+  slidesPerView: 1,
   loop: true,
   modules: [FreeMode, Autoplay],
   breakpoints: {
     550: {
-      slidesPerView: 3,
+      slidesPerView: 2,
       spaceBetween: 10,
     },
     750: {
-      slidesPerView: 4,
+      slidesPerView: 3,
       spaceBetween: 10,
     },
     950: {
-      slidesPerView: 5,
+      slidesPerView: 4,
       spaceBetween: 10,
     },
   },

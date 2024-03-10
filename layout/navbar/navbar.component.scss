@@ -1,7 +1,9 @@
 .navbar {
   display: flex;
   justify-content: space-between;
-  z-index: 2;
+  background-color: rgba($color: #000000, $alpha: 0.85);
+  z-index: 20;
+  position: fixed;
   .menu-list {
     @apply bg-black overflow-auto p-3 rounded-br-[40%];
     position: absolute;

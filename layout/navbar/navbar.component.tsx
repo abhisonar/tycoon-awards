@@ -12,7 +12,7 @@ const NavbarComponent = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const currentPathName = usePathname();
   return (
-    <div className="navbar bg-black h-[80px] flex items-center justify-between w-full">
+    <div className="navbar h-[80px] flex items-center justify-between w-full">
       <div className="flex justify-center items-center w-[200px] ml-4">
         <Image
           src={`/assets/logo-horizontal.png`}
