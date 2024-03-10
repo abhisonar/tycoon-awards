@@ -36,7 +36,8 @@ const UpcomingEventComponent: React.FC<IUpcomingEvent> = ({
       <div
         className={`flex flex-col gap-4 lg:flex-row justify-between p-4 ${
           !isDialogView ? "lg:flex-row" : "lg:flex-col"
-        }`}>
+        }`}
+      >
         <div className="flex flex-col gap-3">
           <div className="flex flex-col gap-3">
             {!isDialogView && (
@@ -51,20 +52,25 @@ const UpcomingEventComponent: React.FC<IUpcomingEvent> = ({
           <p
             className={`text-center text-sm lg:text-lg  lg:text-left ${
               !isDialogView ? "lg:w-2/3" : ""
-            }`}>
+            }`}
+          >
             {eventDetail?.description}
           </p>
           <span
             className={`text-center text-sm lg:text-lg  lg:text-left ${
               !isDialogView ? "lg:w-2/3" : ""
-            }`}>
+            }`}
+          >
             Chief Guest:{" "}
-            <span className="font-bold text-primary-darker">{eventDetail?.chiefGuestName}</span>
+            <span className="font-bold text-primary-darker">
+              {eventDetail?.chiefGuestName}
+            </span>
           </span>
           <span
             className={`text-center text-sm lg:text-lg  lg:text-left ${
               !isDialogView ? "lg:w-2/3" : ""
-            }`}>
+            }`}
+          >
             Date:{" "}
             <span className="font-bold text-primary-darker">
               {formatDate(eventDetail?.date as string)}
@@ -73,14 +79,19 @@ const UpcomingEventComponent: React.FC<IUpcomingEvent> = ({
           <span
             className={`text-center text-sm lg:text-lg  lg:text-left ${
               !isDialogView ? "lg:w-2/3" : ""
-            }`}>
+            }`}
+          >
             Vanue:{" "}
             <span className="font-bold text-primary-darker">
               {getAddress(eventDetail?.address as IEventAddress)}
             </span>
           </span>
         </div>
-        <img src={eventDetail?.posterSrc} className="max-h-[350px] rounded-md" alt="" />
+        <img
+          src={eventDetail?.posterSrc}
+          className="max-h-[350px] rounded-md"
+          alt=""
+        />
       </div>
     </div>
   );
