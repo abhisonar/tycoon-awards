@@ -1,4 +1,3 @@
-import { WHO_ARE_WE } from "@shared/data/about-us/who-are-we.data";
 import React from "react";
 import WhoAreWeComponent from "./(who-are-we)/who-are-we.component";
 import MissionComponent from "./(mission)/mission.component";
