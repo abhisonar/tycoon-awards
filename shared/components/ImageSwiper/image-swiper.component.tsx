@@ -84,7 +84,7 @@ const ImageSwiperComponent: React.FC<IImageSwiperView> = ({
                   loading="lazy"
                 />
               ) : (
-                videoView(image.src, true, true, false)
+                videoView(image.src as string, true, true, false)
               )}
             </SwiperSlide>
           ))}
@@ -108,7 +108,7 @@ const ImageSwiperComponent: React.FC<IImageSwiperView> = ({
               />
             ) : (
               videoView(
-                imageSwiperData[0].src,
+                imageSwiperData[0].src as string,
                 false,
                 true,
                 false,

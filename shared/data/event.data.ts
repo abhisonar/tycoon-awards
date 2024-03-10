@@ -5,6 +5,7 @@ export interface IEvent {
   time?: string;
   posterSrc: string;
   address: IEventAddress;
+  chiefGuestName: string;
 }
 
 export interface IEventAddress {
@@ -15,13 +16,15 @@ export interface IEventAddress {
 
 export const EVENT_DATA: Array<IEvent> = [
   {
-    title: "Asian Iconic Award - 2024",
+    title: "Tycoons Of Maharashtra Awards - 2024",
     description:
-      "Iconic Business Awards Present 1st Edition Of Asian Iconic awards the Most Prestigious awards Of Business Of 2024, Awards Scheduled to be held on 11 th February 2024 in Mumbai (jio World ) with honorable.",
-    date: "2024-03-11",
+      "Join us for an evening of celebration, recognition, and glamour as we honor the Tycoons of Maharashtra. Save the date for this prestigious event! 🏆✨",
+    date: "2024-05-12",
     posterSrc: "/assets/hero/hero-1.jpg",
     address: {
+      address1: "SwissTraffalgaar Luxury Hotel",
       city: "Nashik",
     },
+    chiefGuestName: "Hruta Durgule",
   },
 ];

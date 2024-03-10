@@ -2,6 +2,7 @@
 import { IEvent } from "@shared/data/event.data";
 import { getNextUpcomingEvent } from "@shared/services/event.service";
 import UiButton from "@ui/ui-button/ui-button.component";
+import Link from "next/link";
 import React, { useEffect, useState } from "react";
 
 const HeroSectionComponent = () => {
@@ -27,14 +28,16 @@ const HeroSectionComponent = () => {
         <UiButton variant="outlined" className="!bg-black !px-14" clicked={() => {}} size="large">
           <span>Event Details</span>
         </UiButton>
-        <UiButton
-          variant="contained"
-          color="primary"
-          className="!px-14"
-          clicked={() => {}}
-          size="large">
-          <span className="text-white">Nominate Now</span>
-        </UiButton>
+        <Link href={"/nomination"}>
+          <UiButton
+            variant="contained"
+            color="primary"
+            className="!px-14"
+            clicked={() => {}}
+            size="large">
+            <span className="text-white">Nominate Now</span>
+          </UiButton>
+        </Link>
       </div>
     </div>
   );
