@@ -27,7 +27,7 @@ const InfoLayoutComponent: React.FC<IInfoLayout> = ({
           />
         </div>
         <div className="info-layout-content flex flex-col gap-y-6 items-center md:items-start">
-          <h1 className="text-2xl font-bold text-white text-center bg-primary-darker px-5 py-2">
+          <h1 className="text-md md:text-lg font-bold text-white text-center bg-primary-darker px-3 md:px-5 py-2">
             {title}
           </h1>
           <UiBreadcrumbs data={breadcrumbs} />

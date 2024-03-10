@@ -5,7 +5,7 @@ const ServicesLayout = ({ children }: { children: React.ReactNode }) => {
   return (
     <InfoLayoutComponent
       title={"Services"}
-      posterSrc="https://olc-wordpress-assets.s3.amazonaws.com/uploads/2021/04/OLC-Awards-Thumbnail-1200x800.jpg"
+      posterSrc="https://res.cloudinary.com/marathiudyojak/image/upload/v1710096798/tycoon-awards/headers/Market_Research_u1s3ey.webp"
       breadcrumbs={[
         { label: "Home", link: "/" },
         { label: "Services", link: "/services" },

@@ -5,7 +5,7 @@ const NominationLayout = ({ children }: { children: React.ReactNode }) => {
   return (
     <InfoLayoutComponent
       title={"Nomination"}
-      posterSrc="https://olc-wordpress-assets.s3.amazonaws.com/uploads/2021/04/OLC-Awards-Thumbnail-1200x800.jpg"
+      posterSrc="https://res.cloudinary.com/marathiudyojak/image/upload/v1710096798/tycoon-awards/headers/Nomination_3_phxw0q.webp"
       breadcrumbs={[
         { label: "Home", link: "/" },
         { label: "Nomination", link: "/nomination" },

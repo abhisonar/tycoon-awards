@@ -5,12 +5,11 @@ const PrivacyPolicyLayout = ({ children }: { children: React.ReactNode }) => {
   return (
     <InfoLayoutComponent
       title={"Privacy Policy"}
-      posterSrc="https://olc-wordpress-assets.s3.amazonaws.com/uploads/2021/04/OLC-Awards-Thumbnail-1200x800.jpg"
+      posterSrc="https://res.cloudinary.com/marathiudyojak/image/upload/v1710097128/tycoon-awards/headers/award_ovwswq.webp"
       breadcrumbs={[
         { label: "Home", link: "/" },
         { label: "Privacy Policy", link: "/privacy-policy" },
-      ]}
-    >
+      ]}>
       {children}
     </InfoLayoutComponent>
   );

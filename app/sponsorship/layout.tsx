@@ -5,7 +5,7 @@ const SponsorshipLayout = ({ children }: { children: React.ReactNode }) => {
   return (
     <InfoLayoutComponent
       title={"Sponsorship"}
-      posterSrc="https://olc-wordpress-assets.s3.amazonaws.com/uploads/2021/04/OLC-Awards-Thumbnail-1200x800.jpg"
+      posterSrc="https://res.cloudinary.com/marathiudyojak/image/upload/v1710096799/tycoon-awards/headers/Sponsorship_pwmdg0.webp"
       breadcrumbs={[
         { label: "Home", link: "/" },
         { label: "Sponsorship", link: "/sponsorship" },
