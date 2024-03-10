@@ -81,7 +81,7 @@ const UpcomingEventComponent: React.FC<IUpcomingEvent> = ({
               !isDialogView ? "lg:w-2/3" : ""
             }`}
           >
-            Vanue:{" "}
+            Venue:{" "}
             <span className="font-bold text-primary-darker">
               {getAddress(eventDetail?.address as IEventAddress)}
             </span>
