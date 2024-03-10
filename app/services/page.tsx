@@ -41,7 +41,7 @@ const ServicePage = () => {
                 key={service.slug}
                 title={service.title}
                 src={service.src}
-                descriptioin={service.description}
+                description={service.description}
               />
             ))}
           </div>
