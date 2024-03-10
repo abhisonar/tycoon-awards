@@ -17,26 +17,11 @@ export const MAIN_MENUS: IMainMenu[] = [
     link: RouteLinkEnum.ABOUT_US,
     hasSubMenu: false,
   },
-  {
-    label: RouteLabelEnum.CATEGORY,
-    link: RouteLinkEnum.CATEGORY,
-    hasSubMenu: false,
-  },
   // {
   //   label: RouteLabelEnum.GALLERY,
   //   link: RouteLinkEnum.GALLERY,
   //   hasSubMenu: false,
   // },
-  {
-    label: RouteLabelEnum.CONTACT_US,
-    link: RouteLinkEnum.CONTACT_US,
-    hasSubMenu: false,
-  },
-  {
-    label: RouteLabelEnum.NOMINATION,
-    link: RouteLinkEnum.NOMINATION,
-    hasSubMenu: false,
-  },
   {
     label: RouteLabelEnum.SERVICES,
     link: RouteLinkEnum.SERVICES,
@@ -53,6 +38,16 @@ export const MAIN_MENUS: IMainMenu[] = [
     ],
   },
   {
+    label: RouteLabelEnum.CATEGORY,
+    link: RouteLinkEnum.CATEGORY,
+    hasSubMenu: false,
+  },
+  {
+    label: RouteLabelEnum.NOMINATION,
+    link: RouteLinkEnum.NOMINATION,
+    hasSubMenu: false,
+  },
+  {
     label: RouteLabelEnum.SPONSORSHIP,
     link: RouteLinkEnum.SPONSORSHIP,
     hasSubMenu: false,
@@ -62,4 +57,9 @@ export const MAIN_MENUS: IMainMenu[] = [
   //   link: RouteLinkEnum.MEDIA,
   //   hasSubMenu: false,
   // }
+  {
+    label: RouteLabelEnum.CONTACT_US,
+    link: RouteLinkEnum.CONTACT_US,
+    hasSubMenu: false,
+  },
 ];
