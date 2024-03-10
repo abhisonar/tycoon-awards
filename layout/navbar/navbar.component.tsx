@@ -13,13 +13,13 @@ const NavbarComponent = () => {
   const currentPathName = usePathname();
   return (
     <div className="navbar h-[80px] flex items-center justify-between w-full">
-      <div className="flex justify-center items-center w-[200px] ml-4">
+      <Link href={"/"} className="flex justify-center items-center w-[200px] ml-4">
         <img
           src="/assets/logo-horizontal.png"
           alt="tycoon-awards-logo"
           className="w-full h-full object-cover"
         />
-      </div>
+      </Link>
       <span className="relative flex h-9 w-9 mr-5 lg:hidden">
         <span className="animate-ping absolute h-full w-full rounded-full bg-primary-default opacity-20"></span>
         <span
