@@ -11,11 +11,12 @@ const ExcellenceAwardsComponent = () => {
         {EXCELLENCE_AWARDS_DATA.map((item) => (
           <div
             key={item.title}
-            className="flex flex-col p-3 justify-center items-center border-2 border-primary-default w-full md:w-[15rem] h-[18rem] max-h-[18rem]">
-            <div className="w-[200px] h-[200px]  bg-white justify-center items-center rounded-full ">
-              <img src={item.src} alt="" className="h-[180px] object-contain" />
-            </div>
-            <h3 className="text-lg font-bold text-center">{item.title}</h3>
+            className="group flex flex-col p-3 justify-center items-center gap-4 border-4 border-primary-default w-full md:w-[12rem] h-[18rem] max-h-[16rem] hover:bg-black transition-all duration-200">
+            <img src={item.src} className="max-w-[140px] max-h-[140px] object-contain" />
+
+            <h3 className="group-hover:text-white text-sm lg:text-md font-bold text-center">
+              {item.title}
+            </h3>
           </div>
         ))}
       </div>

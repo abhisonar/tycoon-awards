@@ -5,7 +5,7 @@ import SelectionProcessComponent from "./(selection-process)/selection-process.c
 import Divider from "@mui/material/Divider";
 import UnlockSucessReasonComponent from "./(unlock-success-reason-section)/unlock-success-reason.component";
 import MediaCoverageComponent from "./(media-coverage)/media-coverage.component";
-import ExcellenceAwardsComponent from "./(excellence-awards)/excellence=awards.component";
+import ExcellenceAwardsComponent from "./(excellence-awards)/excellence-awards.component";
 import UnlockOpportunitiesComponent from "./(unlock-opportunities)/unlock-opportunities.component";
 import FaqSectionComponent from "./(faq-section)/faq-section.component";
 

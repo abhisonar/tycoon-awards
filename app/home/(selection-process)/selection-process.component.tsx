@@ -16,7 +16,7 @@ const SelectionProcessComponent = () => {
     setUpcomingEvent(getNextUpcomingEvent());
   };
   return (
-    <div className="flex flex-col mt-4 items-center gap-4">
+    <div className="flex flex-col pt-4 items-center gap-4 bg-white">
       <h2 className="text-center text-[.7rem] font-semibold md:text-md lg:text-xl pb-1 border-b-2 border-b-primary-darker w-fit">
         {upcomingEvent?.title}, {upcomingEvent?.address?.city}
       </h2>
