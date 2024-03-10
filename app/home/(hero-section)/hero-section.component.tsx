@@ -44,9 +44,7 @@ const HeroSectionComponent: React.FC<IHero> = ({ eventDetail }) => {
           dialogTitle={"Event Detail"}
           isFullScreen={false}
           setDialogOpen={setIsEvetDialogOpen}
-          dialogContent={
-            <UpcomingEventComponent eventDetail={eventDetail} hideWave={true} showInRow={false} />
-          }
+          dialogContent={<UpcomingEventComponent eventDetail={eventDetail} isDialogView={true} />}
           dialogOpen={isEvetDialogOpen}></UiDialog>
       </div>
     </div>

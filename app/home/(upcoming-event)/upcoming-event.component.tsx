@@ -6,14 +6,12 @@ import { getAddress } from "@shared/function/address.function";
 
 interface IUpcomingEvent {
   eventDetail: IEvent;
-  showInRow?: boolean;
-  hideWave?: boolean;
+  isDialogView?: boolean;
 }
 
 const UpcomingEventComponent: React.FC<IUpcomingEvent> = ({
   eventDetail,
-  showInRow = true,
-  hideWave = false,
+  isDialogView = false,
 }) => {
   function formatDate(dateString: string) {
     const date = new Date(dateString);
@@ -28,7 +26,7 @@ const UpcomingEventComponent: React.FC<IUpcomingEvent> = ({
   }
   return (
     <div className="w-full bg-white">
-      {!hideWave && (
+      {!isDialogView && (
         <img
           src={`/assets/hero/layered-waves.svg`}
           className="w-full h-[60px] lg:h-[100px]"
@@ -37,29 +35,45 @@ const UpcomingEventComponent: React.FC<IUpcomingEvent> = ({
       )}
       <div
         className={`flex flex-col gap-4 lg:flex-row justify-between p-4 ${
-          showInRow ? "lg:flex-row" : "lg:flex-col"
+          !isDialogView ? "lg:flex-row" : "lg:flex-col"
         }`}>
         <div className="flex flex-col gap-3">
           <div className="flex flex-col gap-3">
-            <h2 className="text-center lg:text-left font-bold text-sm    ">-- Upcoming Event --</h2>
+            {!isDialogView && (
+              <h2 className="text-center lg:text-left font-bold text-sm    ">
+                -- Upcoming Event --
+              </h2>
+            )}
             <h1 className="font-bold text-center text-xl md:text-2xl lg:text-3xl  lg:text-left">
               {eventDetail?.title}, {eventDetail?.address?.city}
             </h1>
           </div>
-          <p className="text-center text-sm lg:text-lg  lg:text-left lg:w-2/3">
+          <p
+            className={`text-center text-sm lg:text-lg  lg:text-left ${
+              !isDialogView ? "lg:w-2/3" : ""
+            }`}>
             {eventDetail?.description}
           </p>
-          <span className="text-center text-sm lg:text-lg  lg:text-left lg:w-2/3">
+          <span
+            className={`text-center text-sm lg:text-lg  lg:text-left ${
+              !isDialogView ? "lg:w-2/3" : ""
+            }`}>
             Chief Guest:{" "}
             <span className="font-bold text-primary-darker">{eventDetail?.chiefGuestName}</span>
           </span>
-          <span className="text-center text-sm lg:text-lg  lg:text-left lg:w-2/3">
+          <span
+            className={`text-center text-sm lg:text-lg  lg:text-left ${
+              !isDialogView ? "lg:w-2/3" : ""
+            }`}>
             Date:{" "}
             <span className="font-bold text-primary-darker">
               {formatDate(eventDetail?.date as string)}
             </span>
           </span>
-          <span className="text-center text-sm lg:text-lg  lg:text-left lg:w-2/3">
+          <span
+            className={`text-center text-sm lg:text-lg  lg:text-left ${
+              !isDialogView ? "lg:w-2/3" : ""
+            }`}>
             Vanue:{" "}
             <span className="font-bold text-primary-darker">
               {getAddress(eventDetail?.address as IEventAddress)}
