@@ -37,6 +37,7 @@ const config: Config = {
         primary: {
           default: "var(--primary-color)",
           darker: "var(--primary-color-darker)",
+          lighter: "var(--primary-color-lighter)",
         },
         blackShade1: "#0D0907",
         black: "var(--black)",
