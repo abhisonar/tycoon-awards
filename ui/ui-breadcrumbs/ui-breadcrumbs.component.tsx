@@ -18,15 +18,15 @@ const UiBreadcrumbs: React.FC<IUiBreadcrumbs> = ({ data }) => {
     <Breadcrumbs
       aria-label="breadcrumb"
       maxItems={2}
-      separator={<NavigateNextIcon className="!text-[1rem]" />}>
+      separator={<NavigateNextIcon className="!text-[1rem]" color="primary" />}>
       {data &&
         data.map((item, index) => (
           <Link
             color="inherit"
             href={getRouteMatcher(item.link)}
             key={index}
-            className={`!text-[.6rem] bg-white px-2 py-[2px] text-black rounded-full ${
-              index === data.length - 1 ? "bg-slate-300" : "bg-white"
+            className={`!text-[.8rem] px-2 py-[2px] text-primary-default rounded-full ${
+              index === data.length - 1 ? "bg-primary-darker text-white" : ""
             }`}>
             {item.label}
           </Link>
