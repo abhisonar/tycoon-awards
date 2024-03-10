@@ -45,14 +45,14 @@ const PrivacyPolicyLayout = () => {
       </h2>
       <div className="font-semibold">We use your information to:</div>
       <ul>
-        <li>Provide requested services</li>
-        <li>Internal record keeping</li>
-        <li>Send promotional emails or information of interest</li>
-        <li>Contact you for market research</li>
-        <li>Manage your account and provide customer support</li>
-        <li>Customize website content based on your interests</li>
-        <li>Enforce terms and conditions</li>
-        <li>Perform functions as described at the time of collection</li>
+        <li> 1. Provide requested services</li>
+        <li> 2. Internal record keeping</li>
+        <li> 3. Send promotional emails or information of interest</li>
+        <li> 4. Contact you for market research</li>
+        <li> 5. Manage your account and provide customer support</li>
+        <li> 6. Customize website content based on your interests</li>
+        <li> 7. Enforce terms and conditions</li>
+        <li> 8. Perform functions as described at the time of collection</li>
       </ul>
       <br></br>
       <h2 className="text-lg font-semibold mb-4 text-black">Security</h2>
@@ -61,7 +61,7 @@ const PrivacyPolicyLayout = () => {
         implemented physical, electronic, and managerial procedures to prevent
         unauthorized access or disclosure.
       </p>
-      <br></br>
+      <br />
       <h2 className="text-lg font-semibold mb-4 text-black">Use of Cookies</h2>
       <p>
         We use cookies to enhance your browsing experience. A cookie is a small
@@ -69,7 +69,7 @@ const PrivacyPolicyLayout = () => {
         settings to accept or reject cookies. We use traffic log cookies for
         statistical analysis, and the data is removed from the system.
       </p>
-      <br></br>
+      <br />
       <h2 className="text-lg font-semibold mb-4 text-black">
         Links to Other Websites
       </h2>
@@ -78,7 +78,7 @@ const PrivacyPolicyLayout = () => {
         for the protection and privacy of information you provide on these
         sites. Please review the privacy policy of the respective websites.
       </p>
-      <br></br>
+      <br />
       <h2 className="text-lg font-semibold mb-4 text-black">
         Controlling Your Personal Information
       </h2>
@@ -88,7 +88,7 @@ const PrivacyPolicyLayout = () => {
         inform us if you wish to receive promotional information from third
         parties.
       </p>
-      <br></br>
+      <br />
       <h2 className="text-lg font-semibold mb-4 text-black">
         Visiting Our Websites from Outside India
       </h2>
@@ -98,14 +98,14 @@ const PrivacyPolicyLayout = () => {
         transferred, stored, and processed in India. We take reasonable steps to
         protect your privacy.
       </p>
-      <br></br>
+      <br />
       <h2 className="text-lg font-semibold mb-4 text-black">Governing Law</h2>
       <p>
         This document is governed by Indian law, and any disputes shall be
         subject to the exclusive jurisdiction of the appropriate courts in
         Mumbai, Maharashtra, India.
       </p>
-      <br></br>
+      <br />
       <div className="font-semibold">
         For any questions or concerns about this Privacy Policy, please contact
         us at [Insert Contact Information].
