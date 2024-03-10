@@ -23,7 +23,7 @@ const HeroSectionComponent = () => {
         className="w-full h-full object-cover w-full"
         loading="lazy"
       />
-      <div className="absolute bottom-0 flex flex-col lg:flex-row gap-5 w-full px-11 py-16 justify-center bg-gradient-to-t from-black to-transparent">
+      <div className="absolute bottom-0 flex flex-col lg:flex-row gap-5 w-full px-11 py-16 justify-center bg-gradient-to-t from-darkBlack to-transparent">
         <UiButton variant="outlined" className="!bg-black !px-14" clicked={() => {}} size="large">
           <span>Event Details</span>
         </UiButton>
