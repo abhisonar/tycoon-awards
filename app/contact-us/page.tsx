@@ -19,18 +19,22 @@ const ContactUs = () => {
           </span>
         </p>
         <p className="text-white mb-2">
-          Email :<span className="font-bold">tycoonsofasia@gmail.com</span>
+          Email :{" "}
+          <a className="font-bold" href="mailto:hello@tycoonsofasia.com">
+            hello@tycoonsofasia.com
+          </a>
         </p>
         <p className="text-white  mb-2">
-          Phone : <span className="font-bold"> +123456890 </span>
+          Phone : <span className="font-bold">+91 7507519639</span>
         </p>
       </div>
       <div className="h-96">
         <iframe
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14997.155209932467!2d73.68751096397455!3d19.99639009998723!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f131!3m3!1m2!1s0x3bddec57ab0feb7d%3A0x8de82948d1990def!2sShramik%20Nagar%2C%20Nashik%2C%20Maharashtra!5e0!3m2!1sen!2sin!4v1710071672888!5m2!1sen!2sin"
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d234.33289533821662!2d73.71116912410007!3d19.99481428165237!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bdded0b95b003c5%3A0x9a5202de9f0f453!2sJagtap%20Commercial%20Complex!5e0!3m2!1sen!2sin!4v1710361159679!5m2!1sen!2sin"
           width="100%"
           height="100%"
-          loading="lazy"></iframe>
+          loading="lazy"
+          referrerPolicy="no-referrer-when-downgrade"></iframe>
       </div>
     </div>
   );
