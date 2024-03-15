@@ -13,9 +13,9 @@ const NavbarComponent = () => {
   const currentPathName = usePathname();
   return (
     <div className="navbar h-[80px] flex items-center justify-between w-full">
-      <Link href={"/"} className="flex justify-center items-center w-[200px] ml-4">
+      <Link href={"/"} className="flex justify-center items-center w-[200px] md:w-[250px] ml-4">
         <img
-          src="/assets/logo-horizontal.png"
+          src="/assets/logo-horizontal.webp"
           alt="tycoon-awards-logo"
           className="w-full h-full object-cover"
         />

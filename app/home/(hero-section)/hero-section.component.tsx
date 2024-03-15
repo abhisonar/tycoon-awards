@@ -15,29 +15,37 @@ const HeroSectionComponent: React.FC<IHero> = ({ eventDetail }) => {
   const [isEvetDialogOpen, setIsEvetDialogOpen] = useState(false);
 
   return (
-    <div className="w-full h-[calc(100vh-80px)] z-0 relative">
-      <img
-        src={eventDetail?.posterSrc}
-        alt="hero-img"
-        className="w-full h-full object-cover w-full"
-        loading="lazy"
-      />
-      <div className="absolute bottom-0 flex flex-col lg:flex-row gap-5 w-full px-11 py-16 justify-center bg-gradient-to-t from-darkBlack to-transparent">
+    <div className="min-w-full min-h-full z-0 relative">
+      <div className="flex flex-col min-w-full min-h-full lg:min-h-screen">
+        <img
+          src={eventDetail?.posterSrc}
+          alt="hero-img"
+          className="w-full h-full object-fill w-full"
+          loading="lazy"
+        />
+        <img
+          src={`/assets/hero/layered-waves.svg`}
+          className="w-full h-[60px] lg:h-[100px]"
+          alt=""
+        />
+      </div>
+
+      <div className="flex lg:flex-row lg:absolute lg:bottom-[35px] gap-5 w-full px-4 lg:px-20 py-4 lg:py-16 justify-center bg-gradient-to-t lg:from-darkBlack to-transparent">
         <UiButton
           variant="outlined"
-          className="!bg-black !px-14"
+          className="!bg-black !px-10 !py-3 !basis-[50%]"
           clicked={() => setIsEvetDialogOpen(!isEvetDialogOpen)}
           size="large">
-          <span>Event Details</span>
+          <span className="text-[.7rem] sm:text-sm">Event Details</span>
         </UiButton>
-        <Link href={"/nomination"}>
+        <Link href={"/nomination"} className="basis-[50%] w-full">
           <UiButton
             variant="contained"
             color="primary"
-            className="!px-14 !w-full"
+            className="!px-7 sm:!px-10 !py-3 !w-full"
             clicked={() => {}}
             size="large">
-            <span className="text-white">Nominate Now</span>
+            <span className="text-white text-[.7rem] sm:text-sm">Nominate Now</span>
           </UiButton>
         </Link>
         <UiDialog
