@@ -36,6 +36,9 @@ const FooterComponent = () => {
             Copyright © Tycoons of Asia. All Rights Reserved.
           </p>
           <p className="text-white text-center md:text-left text-sm md:text-md">
+            Owned By <span className="text-primary-default">K K Trading & Consultancy</span>
+          </p>
+          <p className="text-white text-center md:text-left text-sm md:text-md">
             Designed By{" "}
             <Link href={"https://adytronic.com"} target="_blank" className="text-primary-default">
               Adytronic Media

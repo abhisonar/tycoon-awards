@@ -30,15 +30,15 @@ const HeroSectionComponent: React.FC<IHero> = ({ eventDetail }) => {
         />
       </div>
 
-      <div className="flex lg:flex-row lg:absolute lg:bottom-[35px] gap-5 w-full px-4 lg:px-20 py-4 lg:py-16 justify-center bg-gradient-to-t lg:from-darkBlack to-transparent">
+      <div className="flex lg:flex-row lg:absolute lg:bottom-[0px] gap-5 w-full px-4 lg:px-20 py-4 lg:py-16 justify-center bg-gradient-radial lg:from-darkBlack to-transparent">
         <UiButton
           variant="outlined"
-          className="!bg-black !px-10 !py-3 !basis-[50%]"
+          className="!bg-black !px-7 sm:!px-10 !py-3 !basis-[50%] lg:!basis-[20%]"
           clicked={() => setIsEvetDialogOpen(!isEvetDialogOpen)}
           size="large">
           <span className="text-[.7rem] sm:text-sm">Event Details</span>
         </UiButton>
-        <Link href={"/nomination"} className="basis-[50%] w-full">
+        <Link href={"/nomination"} className="basis-[50%] w-full lg:!basis-[20%]">
           <UiButton
             variant="contained"
             color="primary"

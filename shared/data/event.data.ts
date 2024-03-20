@@ -4,6 +4,7 @@ export interface IEvent {
   date: string;
   time?: string;
   posterSrc: string;
+  posterSrc1?: string;
   address: IEventAddress;
   chiefGuestName: string;
 }
@@ -21,6 +22,8 @@ export const EVENT_DATA: Array<IEvent> = [
       "Join us for an evening of celebration, recognition, and glamour as we honor the Tycoons of Maharashtra. Save the date for this prestigious event! 🏆✨",
     date: "2024-05-12",
     posterSrc:
+      "https://res.cloudinary.com/marathiudyojak/image/upload/v1710960738/tycoon-awards/awards/May_12_2023/EventPoster_va1lfa.jpg",
+    posterSrc1:
       "https://res.cloudinary.com/marathiudyojak/image/upload/v1710528321/tycoon-awards/awards/May_12_2023/Event_12_May_2023_paqvmz.webp",
     address: {
       address1: "",

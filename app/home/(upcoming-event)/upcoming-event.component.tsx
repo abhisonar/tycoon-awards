@@ -73,7 +73,7 @@ const UpcomingEventComponent: React.FC<IUpcomingEvent> = ({
             </span>
           </span>
         </div>
-        <img src={eventDetail?.posterSrc} className="max-h-[350px] rounded-md" alt="" />
+        <img src={eventDetail?.posterSrc1} className="max-h-[350px] rounded-md" alt="" />
       </div>
     </div>
   );
