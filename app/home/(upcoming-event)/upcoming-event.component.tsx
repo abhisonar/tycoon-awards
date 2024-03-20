@@ -60,7 +60,7 @@ const UpcomingEventComponent: React.FC<IUpcomingEvent> = ({
             }`}>
             Date:{" "}
             <span className="font-bold text-primary-darker">
-              {formatDate(eventDetail?.date as string)}
+              {eventDetail?.date && formatDate(eventDetail?.date as string)}
             </span>
           </span>
           <span

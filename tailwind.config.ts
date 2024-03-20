@@ -51,6 +51,15 @@ const config: Config = {
         "t-2xl": "0 -25px 50px -12px rgba(0, 0, 0, 0.25)",
         "t-3xl": "0 -35px 60px -15px rgba(0, 0, 0, 0.3)",
       },
+      animation: {
+        flip: "flip 1s cubic-bezier(0, 0, 0.2, 1) infinite",
+      },
+      keyframes: {
+        flip: {
+          from: { transform: "rotateX(0deg)", transformOrigin: "50% bottom " },
+          to: { transform: "rotateX(180deg)", transformOrigin: "50% bottom " },
+        },
+      },
     },
   },
   plugins: [],

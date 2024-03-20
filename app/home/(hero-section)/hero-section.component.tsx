@@ -1,5 +1,6 @@
 "use client";
 import UpcomingEventComponent from "@app/home/(upcoming-event)/upcoming-event.component";
+import CountdownTimerComponent from "@shared/components/CountdownTimer/count-down-time";
 import { IEvent } from "@shared/data/event.data";
 import { getNextUpcomingEvent } from "@shared/services/event.service";
 import UiButton from "@ui/ui-button/ui-button.component";
@@ -30,24 +31,35 @@ const HeroSectionComponent: React.FC<IHero> = ({ eventDetail }) => {
         />
       </div>
 
-      <div className="flex lg:flex-row lg:absolute lg:bottom-[0px] gap-5 w-full px-4 lg:px-20 py-4 lg:py-16 justify-center bg-gradient-radial lg:from-darkBlack to-transparent">
-        <UiButton
-          variant="outlined"
-          className="!bg-black !px-7 sm:!px-10 !py-3 !basis-[50%] lg:!basis-[20%]"
-          clicked={() => setIsEvetDialogOpen(!isEvetDialogOpen)}
-          size="large">
-          <span className="text-[.7rem] sm:text-sm">Event Details</span>
-        </UiButton>
-        <Link href={"/nomination"} className="basis-[50%] w-full lg:!basis-[20%]">
-          <UiButton
-            variant="contained"
-            color="primary"
-            className="!px-7 sm:!px-10 !py-3 !w-full"
-            clicked={() => {}}
-            size="large">
-            <span className="text-white text-[.7rem] sm:text-sm">Nominate Now</span>
-          </UiButton>
-        </Link>
+      <div className="flex flex-col w-full lg:absolute lg:bottom-[0px]  bg-gradient-radial lg:from-darkBlack to-transparent justify-center items-center">
+        <div className="flex flex-col md:flex-row gap-5 w-full px-4 lg:px-20 py-4 lg:py-10 justify-center items-center">
+          <div className="basis-[50%] w-full lg:!basis-[30%] flex justify-center items-center">
+            <UiButton
+              variant="outlined"
+              className="!bg-black !px-4 sm:!px-10 !py-2 w-full md:!py-4"
+              clicked={() => setIsEvetDialogOpen(!isEvetDialogOpen)}
+              size="large">
+              <span className="text-[.7rem] sm:text-sm">Event Details</span>
+            </UiButton>
+          </div>
+          <Link
+            href={"/nomination"}
+            className="basis-[50%] w-full lg:!basis-[30%] flex justify-center items-center">
+            <UiButton
+              variant="contained"
+              color="primary"
+              className="!px-7 sm:!px-10 !py-2 w-full md:!py-4"
+              clicked={() => {}}
+              size="large">
+              <span className="text-white text-[.7rem] sm:text-sm">Nominate Now</span>
+            </UiButton>
+          </Link>
+        </div>
+        {eventDetail && eventDetail?.date && (
+          <div className="w-full md:w-[70%] lg:w-[60%]">
+            <CountdownTimerComponent date={eventDetail?.date} />
+          </div>
+        )}
         <UiDialog
           dialogTitle={"Event Detail"}
           isFullScreen={false}

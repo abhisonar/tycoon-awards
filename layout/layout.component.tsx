@@ -10,6 +10,7 @@ interface ILayout {
 
 const LayoutComponent: React.FC<ILayout> = ({ children }) => {
   const [layoutLoading, setLayoutLoading] = useState(true);
+
   useEffect(() => {
     setTimeout(() => {
       setLayoutLoading(false);
@@ -25,12 +26,6 @@ const LayoutComponent: React.FC<ILayout> = ({ children }) => {
         <NavbarComponent />
         <PageLayout>{children}</PageLayout>
         <FooterComponent />
-        {/* <a
-            href="#"
-            target="_blank"
-            className="fixed bottom-4 left-4 w-[50px] h-[50px] z-10">
-            <img src="/assets/whatsapp_icon.webp"></img>
-          </a> */}
       </div>
       {/* )} */}
     </>
