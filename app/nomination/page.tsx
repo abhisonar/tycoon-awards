@@ -1,10 +1,10 @@
-import React from "react";
+import React from 'react';
 
 const NominationComponent = () => {
   return (
     <div className="w-full min-h-screen">
       <iframe
-        src="https://docs.google.com/forms/d/e/1FAIpQLScC6gPxRw_fgwwSuNKyVarmbA9_o-sYAgsUswbF6bcHuY830w/viewform?embedded=true"
+        src="https://docs.google.com/forms/d/e/1FAIpQLSeUyeIrIfPVd4KgtBZdktcSt9dtmFpwZFoMxzbPm-LauwLs2w/viewform?embedded=true"
         className="w-full min-h-screen">
         Loading…
       </iframe>

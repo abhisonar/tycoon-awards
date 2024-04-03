@@ -17,18 +17,18 @@ export interface IEventAddress {
 
 export const EVENT_DATA: Array<IEvent> = [
   {
-    title: "Tycoons Of Maharashtra Awards - 2024",
+    title: 'Tycoons Of Maharashtra Awards - 2024',
     description:
-      "Join us for an evening of celebration, recognition, and glamour as we honor the Tycoons of Maharashtra. Save the date for this prestigious event! 🏆✨",
-    date: "2024-05-12",
+      'Join us for an evening of celebration, recognition, and glamour as we honor the Tycoons of Maharashtra. Save the date for this prestigious event! 🏆✨',
+    date: '2024-05-12',
     posterSrc:
-      "https://res.cloudinary.com/marathiudyojak/image/upload/v1710960738/tycoon-awards/awards/May_12_2023/EventPoster_va1lfa.jpg",
+      'https://res.cloudinary.com/marathiudyojak/image/upload/v1712174845/tycoon-awards/awards/12-05-2024/EventPoster1_12_05_2024_hgfjcp.webp',
     posterSrc1:
-      "https://res.cloudinary.com/marathiudyojak/image/upload/v1710528321/tycoon-awards/awards/May_12_2023/Event_12_May_2023_paqvmz.webp",
+      'https://res.cloudinary.com/marathiudyojak/image/upload/v1712174844/tycoon-awards/awards/12-05-2024/EventPoster2_12_05_2024_ybdqjz.webp',
     address: {
-      address1: "",
-      city: "Nashik",
+      address1: '',
+      city: 'Nashik',
     },
-    chiefGuestName: "Hruta Durgule",
+    chiefGuestName: 'Hruta Durgule',
   },
 ];
