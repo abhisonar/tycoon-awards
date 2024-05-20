@@ -12,7 +12,7 @@ const ContactUs = () => {
           here to assist you.
         </p>
         <p className="text-white mb-2">
-          Address : <span className="font-bold">Mumbai</span>
+          Address : <span className="font-bold">Office No 203 & 204, 2nd Floor, Kadam Mension, Above Mahalaxami Sweets, Mahatma Nagar, Nashik - 422005</span>
         </p>
         <p className="text-white mb-2">
           Email :{' '}
@@ -26,7 +26,7 @@ const ContactUs = () => {
       </div>
       <div className="h-96">
         <iframe
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d482634.93194140197!2d72.55150653640894!3d19.081957704971398!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7c6306644edc1%3A0x5da4ed8f8d648c69!2sMumbai%2C%20Maharashtra!5e0!3m2!1sen!2sin!4v1711685223803!5m2!1sen!2sin"
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3749.2251620302363!2d73.75147197397497!3d19.999062481404966!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bddd290b09914b3%3A0xc5c1e66d64bae3c2!2sXQX3%2BJJF%2C%20Nashik%2C%20Maharashtra!5e0!3m2!1sen!2sin!4v1716201233067!5m2!1sen!2sin"
           width="100%"
           height="100%"
           loading="lazy"
