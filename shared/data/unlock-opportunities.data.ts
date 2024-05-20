@@ -8,12 +8,12 @@ export interface UnlockOpportunities {
 }
 
 export const UNLOCK_OPPORTUNITIES_DATA: Array<UnlockOpportunities> = [
-  {
-    title: "Cost-Free Entry Across All Sectors and Categories",
-    description:
-      "Understanding the financial constraints faced by small business owners, entrepreneurs, and larger organizations, we've eliminated upfront entry fees ranging from 1000 Rs to over 5000 Rs per category. At Tycoons Of Asia Awards India, all your entries come at no cost.",
-    isFull: true,
-  },
+  // {
+  //   title: "Cost-Free Entry Across All Sectors and Categories",
+  //   description:
+  //     "Understanding the financial constraints faced by small business owners, entrepreneurs, and larger organizations, we've eliminated upfront entry fees ranging from 1000 Rs to over 5000 Rs per category. At Tycoons Of Asia Awards India, all your entries come at no cost.",
+  //   isFull: true,
+  // },
   {
     title: "Pay Only Upon Victory",
     description:
