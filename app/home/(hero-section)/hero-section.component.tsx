@@ -9,9 +9,10 @@ import React, {useState} from "react";
 
 interface IHero {
     eventDetail: IEvent;
+    eventDetails: IEvent[];
 }
 
-const HeroSectionComponent: React.FC<IHero> = ({eventDetail}) => {
+const HeroSectionComponent: React.FC<IHero> = ({eventDetail, eventDetails}) => {
     const [isEvetDialogOpen, setIsEvetDialogOpen] = useState(false);
 
     return (
@@ -74,7 +75,7 @@ const HeroSectionComponent: React.FC<IHero> = ({eventDetail}) => {
                     dialogTitle={"Event Detail"}
                     isFullScreen={false}
                     setDialogOpen={setIsEvetDialogOpen}
-                    dialogContent={<UpcomingEventComponent eventDetail={eventDetail} isDialogView={true}/>}
+                    dialogContent={<UpcomingEventComponent eventDetail={eventDetail} isDialogView={true} eventDetails={eventDetails}/>}
                     dialogOpen={isEvetDialogOpen}></UiDialog>
             </div>
         </div>
