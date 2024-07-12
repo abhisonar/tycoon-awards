@@ -54,7 +54,7 @@ export const EVENT_DATA: Array<IEvent> = [
             'Join us for an evening of celebration, recognition, and glamour as we honor the Icons of MadhyaPradesh - 2024. Save the date for this prestigious event! 🏆✨',
         date: '2024-07-27',
         posterSrc:
-            'https://res.cloudinary.com/marathiudyojak/video/upload/v1716197746/tycoon-awards/awards/12-05-2024/Cinematic_Event_Highlight_1_wqqew7.mp4',
+            'https://res.cloudinary.com/marathiudyojak/video/upload/v1720807763/tycoon-awards/awards/16-06-2024/Ratnadeep_Award_Cermony_Highlight_Wp_vybol4.mp4',
         isVideo: true,
         posterSrc1:
             'https://res.cloudinary.com/marathiudyojak/image/upload/v1720117005/tycoon-awards/awards/27-07-2024/icons_of_mp_2024_feet3s.jpg',
@@ -70,7 +70,7 @@ export const EVENT_DATA: Array<IEvent> = [
             'Join us for an evening of celebration, recognition, and glamour as we honor the Mahashreshth Udyojak Purskar-2024. Save the date for this prestigious event! 🏆✨',
         date: '2024-08-11',
         posterSrc:
-            'https://res.cloudinary.com/marathiudyojak/video/upload/v1716197746/tycoon-awards/awards/12-05-2024/Cinematic_Event_Highlight_1_wqqew7.mp4',
+            'https://res.cloudinary.com/marathiudyojak/video/upload/v1720807763/tycoon-awards/awards/16-06-2024/Ratnadeep_Award_Cermony_Highlight_Wp_vybol4.mp4',
         isVideo: true,
         posterSrc1:
             'https://res.cloudinary.com/marathiudyojak/image/upload/v1720117450/tycoon-awards/awards/11-08-2024/mahashreshtra_udyojak_11-08-2024_cqhxjh.webp',
